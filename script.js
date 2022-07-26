@@ -16,4 +16,18 @@ function rekomendacja(){
     document.getElementById("rekomendacja").innerHTML = rekomendacje[liczba];
 }
 
-
+function DarkMode(){ 
+        let element = document.body;
+        let napis = document.getElementById("title");
+        element.classList.toggle("dark-mode");
+        napis.classList.toggle("dark-mode-title");   
+        //Od tego momentu nie mam pojęcia jak to działa   
+        console.log(napis.style.backgroundColor); // empty string
+        var bcolor = window.getComputedStyle(napis).backgroundColor;
+        console.log(bcolor); // rgb(35, 35, 35)
+        if (bcolor == "rgb(35, 35, 35)"){
+        napis.style.backgroundColor = "#fafafa";
+        } else {
+        napis.style.backgroundColor = "#232323";
+        } 
+}
