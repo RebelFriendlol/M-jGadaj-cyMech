@@ -6,13 +6,14 @@ let rekomendacje = ['"Ta rozmowa zmieniła moje życie" - Daniel S',
 '"Wędkowałem z nim kiedyś" - Bear Grylls' 
 ];
 
-var liczba = Math.floor(Math.random() * (3 + 1)-1+1);
 
-function odpowiedz(){      
+function odpowiedz(){ 
+    var liczba = Math.floor(Math.random() * (3 + 1)-1+1);
     console.log(liczba);
     document.getElementById("odpowiedz").innerHTML = odpowiedzi[liczba];      
 }
 function rekomendacja(){
+    var liczba = Math.floor(Math.random() * (3 + 1)-1+1);
     document.getElementById("rekomendacja").innerHTML = rekomendacje[liczba];
 }
 
